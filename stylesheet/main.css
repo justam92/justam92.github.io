@@ -1,0 +1,104 @@
+body{
+    background-image:  url("use_your_illusion.png");
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+}
+
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 100%;
+    margin: 10%;
+    margin-left: 25%;
+}
+
+footer{
+    width: 90%;
+    margin: 10%;
+}
+article{
+    width: 50%;
+    float: left;
+}
+
+#logo{
+    float: left;
+    font: 'Josefin Sans', sans-serif;
+    font-size: 270%;
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#clock{
+    float: left;
+    font: 'Josefin Sans', sans-serif;
+    font-size: 270%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.tile1{
+    margin: 2%;
+    width: 40%;
+    height: 20%;
+    background: #3095d3;
+    float: left;
+}
+
+.tile2{
+    margin: 2%;
+    width: 40%;
+    height: 20%;
+    background: #666666;
+    float: left;
+}
+
+.tile3{
+    margin: 2%;
+    width: 40%;
+    height: 20%;
+    background: #93c748;
+    float: left;
+}
+
+.tile4{
+    margin: 2%;
+    width: 84%;
+    height: 20%;
+    background: #ee5a32;
+}
+
+.tile5{
+    margin: 2%;
+    width: 84%;
+    height: 40%;
+    background: #666666;
+}
+
+.linkedin{
+    float: left;
+    margin: 2%;
+    width: 25%;
+    height: 20%;
+    background: #0077B5;
+}
+
+.goldenline{
+    float: left;
+    margin: 2%;
+    width: 25%;
+    height: 20%;
+    background: #fdb241;
+}
+
+.github{
+    color: #000000;
+    float: left;
+    margin: 2%;
+    width: 25%;
+    height: 20%;
+    background: #ffffff;
+}
