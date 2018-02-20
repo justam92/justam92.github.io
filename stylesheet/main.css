@@ -1,5 +1,5 @@
 body{
-    background-image:  url("use_your_illusion.png");
+    background-image:  url("background.png");
     color: #ffffff;
     font-family: 'Karla', sans-serif;
 }
@@ -13,11 +13,22 @@ header{
     width: 100%;
     margin: 10%;
     margin-left: 25%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.mainList{
+    float: left;
 }
 
 footer{
     width: 90%;
     margin: 10%;
+    text-align: center;
 }
 article{
     width: 50%;
@@ -31,6 +42,7 @@ article{
     width: 35%;
     margin-top: 5%;
     margin-bottom: 5%;
+    text-align: left;
 }
 #clock{
     float: left;
@@ -38,44 +50,7 @@ article{
     font-size: 270%;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-.tile1{
-    margin: 2%;
-    width: 40%;
-    height: 20%;
-    background: #3095d3;
-    float: left;
-}
-
-.tile2{
-    margin: 2%;
-    width: 40%;
-    height: 20%;
-    background: #666666;
-    float: left;
-}
-
-.tile3{
-    margin: 2%;
-    width: 40%;
-    height: 20%;
-    background: #93c748;
-    float: left;
-}
-
-.tile4{
-    margin: 2%;
-    width: 84%;
-    height: 20%;
-    background: #ee5a32;
-}
-
-.tile5{
-    margin: 2%;
-    width: 84%;
-    height: 40%;
-    background: #666666;
+    text-align: left;
 }
 
 .linkedin{
@@ -86,19 +61,31 @@ article{
     background: #0077B5;
 }
 
+.linkedin:hover{
+    background: #0066a4;
+}
+
 .goldenline{
     float: left;
     margin: 2%;
     width: 25%;
     height: 20%;
-    background: #fdb241;
+    background: #FBBF00;
+}
+
+.goldenline:hover{
+    background: #eaae00;
 }
 
 .github{
-    color: #000000;
+    color: #ffffff;
     float: left;
     margin: 2%;
     width: 25%;
     height: 20%;
-    background: #ffffff;
+    background: #181717;
+}
+
+.github:hover{
+    background: #070606;
 }
