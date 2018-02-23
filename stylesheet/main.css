@@ -8,31 +8,76 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px salmon solid;
+    border-radius: 50px;
 }
 header{
     width: 100%;
-    margin: 10%;
+    margin: 1%;
     margin-left: 25%;
     text-align: center;
+}
+
+.hamburger{
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #ffffff;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    transform: translateY(10px);
+}
+
+.hamburger::after{
+    transform: translateY(25px);
+}
+
+/*zamienianie hamburgera w krzyżyk dwa punkty*/
+
+.hamburger:focus{
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after{
+    transform: rotate(-90deg) translateX(-10px);
 }
 
 ul{
     list-style: none;
     text-align: center;
+    color: #ffffff;
 }
 
-.mainList{
-    float: left;
+ul a{
+    text-decoration: none;
+    color: #ffffff;
 }
+
 
 footer{
     width: 90%;
-    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 5%;
     text-align: center;
 }
 article{
     width: 50%;
-    float: left;
+    float: right;
+    background: #0077B5;
 }
 
 #logo{
@@ -40,7 +85,7 @@ article{
     font: 'Josefin Sans', sans-serif;
     font-size: 270%;
     width: 35%;
-    margin-top: 5%;
+    margin-top: 0.5%;
     margin-bottom: 5%;
     text-align: left;
 }
@@ -48,7 +93,7 @@ article{
     float: left;
     font: 'Josefin Sans', sans-serif;
     font-size: 270%;
-    margin-top: 5%;
+    margin-top: 0.5%;
     margin-bottom: 5%;
     text-align: left;
 }
