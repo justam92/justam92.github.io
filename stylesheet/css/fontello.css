@@ -57,8 +57,8 @@
  
 .icon-mail:before { content: '\e800'; font-size: 40px; margin: 2px; } /* '' */
 .icon-user:before { content: '\e801'; font-size: 40px; margin: 2px; } /* '' */
-.icon-github-circled:before { content: '\f09b'; font-size: 40px; margin: 2px; } /* '' */
+.icon-github-circled:before { content: '\f09b'; font-size: 65px; margin: 2px; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
-.icon-linkedin-1:before { content: '\f0e1'; font-size: 40px; margin: 2px; } /* '' */
+.icon-linkedin-1:before { content: '\f0e1'; font-size: 60px; margin: 2px; } /* '' */
 .icon-laptop:before { content: '\f109'; font-size: 40px; margin: 2px; } /* '' */
-.icon-git:before { content: '\f1d3'; font-size: 40px; margin: 2px; } /* '' */
+.icon-git:before { content: '\f1d3'; font-size: 30px; margin: 2px; } /* '' */

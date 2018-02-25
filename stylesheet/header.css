@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    margin: 2.5%;
+    margin-left: 32%;
+    text-align: center;
+}
+
+#logo{
+    float: left;
+    font: 'Josefin Sans', sans-serif;
+    font-size: 270%;
+    width: 35%;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+#clock{
+    float: left;
+    font: 'Josefin Sans', sans-serif;
+    font-size: 270%;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+    text-align: left;
+}

@@ -5,132 +5,27 @@ body{
 }
 
 #container{
-    width: 100%;
+    width: 99%;
+    height: 98%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px salmon solid;
+    border: 2px #FF524A solid;
     border-radius: 50px;
+    position: fixed;
 }
-header{
-    width: 100%;
-    margin: 1%;
-    margin-left: 25%;
-    text-align: center;
-}
-
-.hamburger{
-    width: 40px;
-    height: 35px;
-    border: 0;
-    border-top: 5px solid #ffffff;
-    background: transparent;
-    position: relative;
-    transition: 0.3s transform linear;
-    margin-left: 2%;
-    margin-top: 3%;
-}
-
-.hamburger::before, .hamburger::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 5px solid #ffffff;
-    transform: translateY(10px);
-}
-
-.hamburger::after{
-    transform: translateY(25px);
-}
-
-/*zamienianie hamburgera w krzyżyk dwa punkty*/
-
-.hamburger:focus{
-    transform: rotate(45deg) translateY(5px);
-    border: none;
-}
-
-.hamburger:focus::after{
-    transform: rotate(-90deg) translateX(-10px);
-}
-
-ul{
-    list-style: none;
-    text-align: center;
-    color: #ffffff;
-}
-
-ul a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
 
 footer{
     width: 90%;
-    margin-top: 5%;
+    margin-top: 22%;
     margin-bottom: 1%;
-    margin-left: 5%;
+    margin-left: 10%;
     text-align: center;
 }
 article{
     width: 50%;
-    float: right;
-    background: #0077B5;
-}
-
-#logo{
-    float: left;
-    font: 'Josefin Sans', sans-serif;
-    font-size: 270%;
-    width: 35%;
-    margin-top: 0.5%;
-    margin-bottom: 5%;
-    text-align: left;
-}
-#clock{
-    float: left;
-    font: 'Josefin Sans', sans-serif;
-    font-size: 270%;
-    margin-top: 0.5%;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.linkedin{
-    float: left;
-    margin: 2%;
-    width: 25%;
-    height: 20%;
-    background: #0077B5;
-}
-
-.linkedin:hover{
-    background: #0066a4;
-}
-
-.goldenline{
-    float: left;
-    margin: 2%;
-    width: 25%;
-    height: 20%;
-    background: #FBBF00;
-}
-
-.goldenline:hover{
-    background: #eaae00;
-}
-
-.github{
-    color: #ffffff;
-    float: left;
-    margin: 2%;
-    width: 25%;
-    height: 20%;
-    background: #181717;
-}
-
-.github:hover{
-    background: #070606;
+    color: #1f3a66;
+    background: #f2dbcf;
+    margin-left: 28%;
+    padding: 2%;
+    border-radius: 10px;
 }
