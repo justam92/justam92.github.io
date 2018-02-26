@@ -30,7 +30,7 @@ nav{
     position: absolute;
     top: 9%;
     left: 0;
-    height: 400px;
+    height: 460px;
     width: 330px;
     background: #1f3a66;
     transform: translateX(-140%);
@@ -59,7 +59,7 @@ nav{
 
 .partOfMenu li{
     background: #f2dbce;
-    margin-bottom: 130px;
+    margin-bottom: 180px;
     border-radius: 5px;
     flex-basis: 100%;
     display: flex;
@@ -107,5 +107,5 @@ nav{
 }
 
 .contact{
-    margin-top: -40px;
+    margin-top: -80px;
 }
