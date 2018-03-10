@@ -1,17 +1,18 @@
 body{
-    background-image:  url("background.png");
+    background-image:  url("fancy-pants.jpg");
     color: #ffffff;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #container{
-    width: 99%;
-    height: 98%;
+    width: 98.5%;
+    height: 97%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px #FF524A solid;
+    border: 5px #b87dfc85 solid;
     border-radius: 50px;
     position: fixed;
+    background: #7a7a7ace;
 }
 
 footer{
@@ -23,7 +24,7 @@ footer{
 }
 article{
     width: 50%;
-    color: #1f3a66;
+    color: #3c3173;
     background: #f2dbcf;
     margin-left: 28%;
     padding: 2%;

@@ -1,24 +1,33 @@
 header{
-    width: 100%;
+    width: 70%;
     margin: 2.5%;
     margin-left: 32%;
     text-align: center;
+    font-family: 'Marck Script', cursive;
 }
 
 #logo{
     float: left;
     font: 'Josefin Sans', sans-serif;
-    font-size: 270%;
-    width: 35%;
+    font-size: 300%;
+    width: 45%;
     margin-top: 0.5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    margin-left: 4%;
     text-align: left;
+    border-bottom: 5px double #b87dfc;
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
 }
 #clock{
     float: left;
     font: 'Josefin Sans', sans-serif;
-    font-size: 270%;
+    font-size: 300%;
+    margin-left: 20%;
     margin-top: 0.5%;
     margin-bottom: 5%;
     text-align: left;
+    letter-spacing: 2px;
 }
