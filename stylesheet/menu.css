@@ -75,6 +75,10 @@ nav{
     padding: 5px;
 }
 
+.contact > a:hover > h2, .contact > a:hover > .icon-mail {
+    color: #f2dbcf;
+}
+
 .partOfMenu > ul > li > a > h2, .icon-user, .submenu > ul > li > a, .icon-laptop, .icon-mail, .buttonMenu > h2, .partOfMenu > ul > li > h2{
     color: #3c3173;
 }

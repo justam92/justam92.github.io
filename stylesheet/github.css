@@ -1,0 +1,24 @@
+.github{
+    color: #ffffff;
+    float: left;
+    padding: 2%;
+    width: 70px;
+    height: 70px;
+    background: #181717;
+    margin: 2%;  
+    border-radius: 30px;
+}
+
+.github:hover{
+    background: #060505;
+}
+
+.icon-github-circled:hover:before { 
+    transition: 0.3s transform linear; 
+    transform: rotate(0deg); 
+} 
+
+.icon-github-circled::before { 
+    transition: 0.3s transform linear; 
+    transform: rotate(-360deg); 
+} 

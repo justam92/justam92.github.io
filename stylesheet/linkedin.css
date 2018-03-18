@@ -1,0 +1,24 @@
+.linkedin{
+    color: #ffffff;
+    float: left;
+    margin: 2%;
+    padding: 2%;
+    width: 70px;
+    height: 70px;
+    background: #0077B5;
+    border-radius: 30px;
+}
+
+.linkedin:hover{
+    background: #0055a3;
+}
+
+.icon-linkedin-1:hover:before { 
+    transition: 0.3s transform linear; 
+    transform: rotate(0deg); 
+} 
+
+.icon-linkedin-1::before { 
+    transition: 0.3s transform linear; 
+    transform: rotate(-360deg); 
+}
