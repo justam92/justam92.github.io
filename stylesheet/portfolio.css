@@ -1,0 +1,19 @@
+.mainScanOfProject{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-bottom: 4%;
+    border: 2px double #3c3173;
+    margin-top: 2%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titleOfProject{
+    font-weight: bold;
+    text-align: center;
+    color: #3c3173;
+    margin-top: -2%;
+}
