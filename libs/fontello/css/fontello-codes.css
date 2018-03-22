@@ -1,8 +1,13 @@
 
 .icon-mail:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
+.icon-left-open-outline:before { content: '\e802'; } /* '' */
+.icon-left-open:before { content: '\e803'; } /* '' */
+.icon-right-open-outline:before { content: '\e804'; } /* '' */
+.icon-right-open:before { content: '\e805'; } /* '' */
+.icon-emo-coffee:before { content: '\e808'; } /* '' */
+.icon-spin4:before { content: '\e834'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin-1:before { content: '\f0e1'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
-.icon-git:before { content: '\f1d3'; } /* '' */

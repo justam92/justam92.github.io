@@ -1,25 +1,3 @@
-var firstPageAndTitleOfProject = getFirstPageAndTitleOfProject();
-
-
-var containerOfArticle = document.getElementsByTagName("article")[0]; //pobiera z html'a tag article
-
-var referenceToTheLink = document.createElement("a"); //tworzy <a></a>
-referenceToTheLink.href = "#";
-
-var mainScanOfProject = document.createElement("img");
-mainScanOfProject.classList = "mainScanOfProject";
-mainScanOfProject.src = firstPageAndTitleOfProject[0].image;
-
-var titleOfProject = document.createElement("p");
-titleOfProject.classList = "titleOfProject";
-titleOfProject.textContent = firstPageAndTitleOfProject[0].title;
-
-referenceToTheLink.appendChild(mainScanOfProject); //wrzuca <img> do <a></a>
-
-referenceToTheLink.appendChild(titleOfProject);
-
-containerOfArticle.appendChild(referenceToTheLink);
-
 function getFirstPageAndTitleOfProject() {
     return [{
         image: "../imgs/portfolio/2015/The concept of land development at the Reda river in Wejherowo/Reda1.jpg",

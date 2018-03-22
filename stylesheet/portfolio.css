@@ -17,3 +17,35 @@ a{
     color: #3c3173;
     margin-top: -2%;
 }
+
+.icon-left-open-outline{
+    position: absolute;
+    top: 50%;
+    border: 2px solid #3c3173;
+    border-radius: 50%;
+    padding: 3px 3px 3px 0;
+}
+
+.icon-left-open-outline:hover{
+    cursor: pointer;
+    background: #3c3173;
+    color: #f2dbcf;
+    border-radius: 50%;
+}
+
+.icon-right-open-outline{
+    position: absolute;
+    float: right;
+    top: 50%;
+    left: 78%;
+    border: 2px double #3c3173;
+    border-radius: 50%;
+    padding: 3px 0 3px 3px;
+}
+
+.icon-right-open-outline:hover{
+    cursor: pointer;
+    background: #3c3173;
+    color: #f2dbcf;
+    border-radius: 50%;
+}
