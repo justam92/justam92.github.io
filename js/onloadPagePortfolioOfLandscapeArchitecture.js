@@ -1,62 +1,79 @@
-function onloadPagePortfolioOfLandscapeArchitecture() {
-    var firstPageAndTitleOfProject = getFirstPageAndTitleOfProject();
+(function onloadPagePortfolioOfLandscapeArchitecture() {
+    var firstPageAndTitleOfProjects = getFirstPageAndTitleOfProjects();
 
     var containerOfArticle = document.getElementsByTagName("article")[0]; //pobiera z html'a tag article
 
-    var clickLeftOutline = document.createElement("i");
-    clickLeftOutline.classList = "icon-left-open-outline";
+    var leftButton = document.createElement("i");
+    leftButton.classList = "icon-left-open-outline";
+    containerOfArticle.appendChild(leftButton);
+
+    var rightButton = document.createElement("i");
+    rightButton.classList = "icon-right-open-outline";
+    containerOfArticle.appendChild(rightButton);
 
     var referenceToTheLink = document.createElement("a"); //tworzy <a></a>
     referenceToTheLink.href = "#";
 
     var mainScanOfProject = document.createElement("img");
     mainScanOfProject.classList = "mainScanOfProject";
-    mainScanOfProject.src = firstPageAndTitleOfProject[0].image;
+    mainScanOfProject.src = firstPageAndTitleOfProjects[0].pageImage;
+    referenceToTheLink.appendChild(mainScanOfProject); //wrzuca <img> do <a></a>
 
     var titleOfProject = document.createElement("p");
     titleOfProject.classList = "titleOfProject";
-    titleOfProject.textContent = firstPageAndTitleOfProject[0].title;
-
-    var clickRightOutline = document.createElement("i");
-    clickRightOutline.classList = "icon-right-open-outline";
-
-    referenceToTheLink.appendChild(mainScanOfProject); //wrzuca <img> do <a></a>
-
+    titleOfProject.textContent = firstPageAndTitleOfProjects[0].title;
     referenceToTheLink.appendChild(titleOfProject);
-
-    containerOfArticle.appendChild(clickLeftOutline);
 
     containerOfArticle.appendChild(referenceToTheLink);
 
-    containerOfArticle.appendChild(clickRightOutline);
-    
-    
     function getNextProject() {
-        
-        var textOfTitleOfProject = titleOfProject.textContent;
 
-        var positionOfTitle = getFirstPageAndTitleOfProject().title;
+        for (var counter = 0; counter < firstPageAndTitleOfProjects.length; counter++) {
 
+            if (titleOfProject.textContent == firstPageAndTitleOfProjects[counter].title) {
 
-        debugger;
+                var firstPageAndTitleOfNextProjects = firstPageAndTitleOfProjects[counter + 1];
 
-        for (var x = 0; x < getFirstPageAndTitleOfProject().length; x++) {
-            mainScanOfProject.src = firstPageAndTitleOfProject[x].image;
-            titleOfProject.textContent = firstPageAndTitleOfProject[x].title;
+                mainScanOfProject.src = firstPageAndTitleOfNextProjects.pageImage;
+                titleOfProject.textContent = firstPageAndTitleOfNextProjects.title;
+                break;
+            }
+            if (titleOfProject.textContent == firstPageAndTitleOfProjects[11].title) {
+
+                var firstPageAndTitleOfFirstProject = firstPageAndTitleOfProjects[0];
+
+                mainScanOfProject.src = firstPageAndTitleOfFirstProject.pageImage;
+                titleOfProject.textContent = firstPageAndTitleOfFirstProject.title;
+                break;
+            }
         }
 
     }
-    
-    clickRightOutline.onclick = getNextProject;
+
+    rightButton.onclick = getNextProject;
 
     function getPreviousProject() {
-        for (var x = 0; x < length.getFirstPageAndTitleOfProject; x--) {
-            mainScanOfProject.src = firstPageAndTitleOfProject[x].image;
-            titleOfProject.textContent = firstPageAndTitleOfProject[x].title;
+
+        for (var counter = 0; counter < firstPageAndTitleOfProjects.length; counter++) {
+
+            if (titleOfProject.textContent == firstPageAndTitleOfProjects[0].title) {
+
+                var firstPageAndTitleOfLastProject = firstPageAndTitleOfProjects[11];
+
+                mainScanOfProject.src = firstPageAndTitleOfLastProject.pageImage;
+                titleOfProject.textContent = firstPageAndTitleOfLastProject.title;
+                break;
+            }
+            if (titleOfProject.textContent == firstPageAndTitleOfProjects[counter].title) {
+
+                var firstPageAndTitleOfPreviousProjects = firstPageAndTitleOfProjects[counter - 1];
+
+                mainScanOfProject.src = firstPageAndTitleOfPreviousProjects.pageImage;
+                titleOfProject.textContent = firstPageAndTitleOfPreviousProjects.title;
+                break;
+            }
+
         }
     }
-    clickLeftOutline.onclick = getPreviousProject;
-}
-
-
-onloadPagePortfolioOfLandscapeArchitecture();
+    leftButton.onclick = getPreviousProject;
+})();
