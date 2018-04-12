@@ -12,7 +12,9 @@
     containerOfArticle.appendChild(rightButton);
 
     var referenceToTheLink = document.createElement("a"); //tworzy <a></a>
+    referenceToTheLink.id = "referenceToTheLink";
     referenceToTheLink.href = "#";
+    referenceToTheLink.onclick = onloadPageOfImagesProjects;
 
     var mainScanOfProject = document.createElement("img");
     mainScanOfProject.classList = "mainScanOfProject";
