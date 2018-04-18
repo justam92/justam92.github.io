@@ -49,21 +49,9 @@
       "src": "fontelico"
     },
     {
-      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
-      "css": "spin4",
-      "code": 59444,
-      "src": "fontelico"
-    },
-    {
       "uid": "d4ebe676479ff9cb41c7797f003aa54d",
       "css": "left-open-outline",
       "code": 59394,
-      "src": "typicons"
-    },
-    {
-      "uid": "wlri7uftq4zbi82q2xuf08ayd8kpijlk",
-      "css": "left-open",
-      "code": 59395,
       "src": "typicons"
     },
     {
@@ -73,10 +61,16 @@
       "src": "typicons"
     },
     {
-      "uid": "6zhrgcf3co77hnljttd3b2mrc8z5fiq5",
-      "css": "right-open",
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search-1",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ce5e29aa5208417700e7f7012a236c00",
+      "css": "undo",
       "code": 59397,
-      "src": "typicons"
+      "src": "iconic"
     }
   ]
 }

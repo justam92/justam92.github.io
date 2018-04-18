@@ -4,6 +4,7 @@ function onloadPageOfImagesProjects() {
     var containerOfArticle = document.getElementsByTagName("article")[0];
 
     var scansOfProject = document.createElement("div");
+    scansOfProject.id = "scansOfProject";
 
     var descriptionOfProject = document.createElement("p");
     descriptionOfProject.classList = "descriptionOfProject";
@@ -12,6 +13,17 @@ function onloadPageOfImagesProjects() {
 
     containerOfArticle.appendChild(descriptionOfProject);
     containerOfArticle.appendChild(scansOfProject);
+
+    var backToThePreviousPage = document.createElement("a");
+    backToThePreviousPage.id = "backToThePreviousPage";
+    backToThePreviousPage.href = "portfolio-of-landscape-architecture.html";
+
+    var undo = document.createElement("i");
+    undo.classList = "icon-undo";
+    undo.textContent = "Wróć do poprzedniej strony";
+
+    backToThePreviousPage.appendChild(undo);
+    containerOfArticle.appendChild(backToThePreviousPage);
 
 
     function createImagesOfProjectPagesAndDescription() {
@@ -26,10 +38,22 @@ function onloadPageOfImagesProjects() {
                 var pagesOfProject = pagesAndDescriptionsOfProjects[counter].images;
 
                 for (var quantity = 0; quantity < pagesOfProject.length; quantity++) {
+
+                    var storageForImage = document.createElement('a');
+                    storageForImage.classList.add('storageForImage');
+
+                    var magnifier = document.createElement("i");
+                    magnifier.classList = "icon-search-1";
+                    storageForImage.appendChild(magnifier);
+                    
                     var imageOfProject = document.createElement("img");
                     imageOfProject.classList = "imageOfProject";
                     imageOfProject.src = pagesOfProject[quantity].image;
-                    scansOfProject.appendChild(imageOfProject);
+                    storageForImage.appendChild(imageOfProject);
+
+                    scansOfProject.appendChild(storageForImage);
+                    
+                    
                 }
 
                 descriptionOfProject.textContent = pagesAndDescriptionsOfProjects[counter].description;
